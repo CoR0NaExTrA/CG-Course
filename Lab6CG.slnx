@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="ModelScene/ModelScene.csproj" />
+  <Project Path="SeaBattle/SeaBattle.csproj" Id="1d90a7c1-b585-4d9e-a870-2843254476e5" />
+</Solution>
