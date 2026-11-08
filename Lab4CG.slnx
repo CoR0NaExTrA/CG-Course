@@ -1,0 +1,5 @@
+<Solution>
+  <Project Path="Maze3D/Maze3D.csproj" Id="effed455-ccf0-4f50-96bc-048fc0d2497c" />
+  <Project Path="MobiusStrip/MobiusStrip.csproj" Id="fdf7367c-b366-4db9-a9c7-1d6da29f5976" />
+  <Project Path="SnubDodecahedron/SnubDodecahedron.csproj" Id="fe137e60-3484-4c4f-8095-b523e7bce98d" />
+</Solution>
