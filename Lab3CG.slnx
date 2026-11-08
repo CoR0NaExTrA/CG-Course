@@ -1,0 +1,5 @@
+<Solution>
+  <Project Path="AsteroidGame/AsteroidGame.csproj" />
+  <Project Path="BezierCurve/BezierCurve.csproj" />
+  <Project Path="Meadow/Meadow.csproj" />
+</Solution>
