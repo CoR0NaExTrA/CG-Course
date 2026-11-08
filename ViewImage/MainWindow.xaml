@@ -1,0 +1,51 @@
+﻿<Window x:Class="ViewImage.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ViewImage"
+        mc:Ignorable="d"
+        Title="Image Viewer" Height="600" Width="900">
+    <DockPanel>
+
+        <Menu DockPanel.Dock="Top">
+            <MenuItem Header="File">
+                <MenuItem Header="Open" Click="Open_Click"/>
+            </MenuItem>
+        </Menu>
+
+        <Grid>
+            <!-- Checkerboard -->
+            <Border>
+                <Border.Background>
+                    <DrawingBrush TileMode="Tile"
+                                  Viewport="0,0,20,20"
+                                  ViewportUnits="Absolute">
+                        <DrawingBrush.Drawing>
+                            <DrawingGroup>
+                                <GeometryDrawing Brush="#DDD">
+                                    <GeometryDrawing.Geometry>
+                                        <RectangleGeometry Rect="0,0,20,20"/>
+                                    </GeometryDrawing.Geometry>
+                                </GeometryDrawing>
+                                <GeometryDrawing Brush="#BBB">
+                                    <GeometryDrawing.Geometry>
+                                        <GeometryGroup>
+                                            <RectangleGeometry Rect="0,0,10,10"/>
+                                            <RectangleGeometry Rect="10,10,10,10"/>
+                                        </GeometryGroup>
+                                    </GeometryDrawing.Geometry>
+                                </GeometryDrawing>
+                            </DrawingGroup>
+                        </DrawingBrush.Drawing>
+                    </DrawingBrush>
+                </Border.Background>
+            </Border>
+
+            <Image Source="{Binding Image}"
+                   Stretch="Uniform"
+                   HorizontalAlignment="Center"
+                   VerticalAlignment="Center"/>
+        </Grid>
+    </DockPanel>
+</Window>
